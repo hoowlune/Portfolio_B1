@@ -26,6 +26,7 @@
 }
 
 html {
+  font-size: 18px;
   scroll-behavior: smooth;
   scroll-padding-top: var(--nav-h);
 }
@@ -93,7 +94,7 @@ body {
 .nav-links a {
   color: var(--text-muted);
   text-decoration: none;
-  font-size: 0.9rem;
+  font-size: 1rem;
   transition: color 0.2s;
 }
 .nav-links a:hover,
@@ -149,13 +150,18 @@ body {
 
 .hero-rings {
   position: absolute;
-  inset: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  top: 50%;
+  right: calc(8vw + 160px);
+  transform: translateY(-50%);
   pointer-events: none;
 }
-.ring { position: absolute; border-radius: 50%; }
+.ring {
+  position: absolute;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 .ring-1 { width: 420px; height: 420px; border: 1px solid rgba(138, 21, 21, 0.22); }
 .ring-2 { width: 620px; height: 620px; border: 1px solid rgba(138, 21, 21, 0.11); }
 .ring-3 { width: 820px; height: 820px; border: 1px solid rgba(138, 21, 21, 0.06); }
@@ -171,7 +177,7 @@ body {
 }
 
 .hero-label {
-  font-size: 0.68rem;
+  font-size: 0.8rem;
   letter-spacing: 0.45em;
   text-transform: uppercase;
   color: var(--accent-light);
@@ -188,14 +194,14 @@ body {
 
 .hero-domains {
   font-style: italic;
-  font-size: clamp(1rem, 2vw, 1.2rem);
+  font-size: clamp(1.15rem, 2vw, 1.4rem);
   color: var(--text-muted);
   letter-spacing: 0.05em;
 }
 .hero-sep { color: var(--accent-light); font-style: normal; }
 
 .hero-school {
-  font-size: 0.66rem;
+  font-size: 0.8rem;
   letter-spacing: 0.24em;
   text-transform: uppercase;
   color: var(--text-muted);
@@ -218,7 +224,7 @@ body {
   color: var(--text);
 }
 .meta-val {
-  font-size: 0.6rem;
+  font-size: 0.76rem;
   letter-spacing: 0.22em;
   text-transform: uppercase;
   color: var(--text-muted);
@@ -294,32 +300,6 @@ body {
   to   { opacity: 1; transform: translateY(0); }
 }
 
-/* Points de navigation */
-.dots-nav {
-  position: fixed;
-  right: 30px;
-  top: 50%;
-  transform: translateY(-50%);
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-  z-index: 200;
-}
-.dot {
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  border: 1px solid rgba(138, 21, 21, 0.5);
-  background: transparent;
-  display: block;
-  transition: background 0.3s, border-color 0.3s, transform 0.3s;
-}
-.dot.active,
-.dot:hover {
-  background: var(--accent-light);
-  border-color: var(--accent-light);
-  transform: scale(1.3);
-}
 
 /* === SECTIONS === */
 .section {
@@ -450,7 +430,7 @@ body {
 }
 .arch-tags span {
   color: #ffffff;
-  font-size: 0.76rem;
+  font-size: 0.88rem;
   letter-spacing: 0.07em;
   text-align: center;
   padding: 4px 10px;
@@ -475,7 +455,7 @@ body {
 
 .arch-title {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 0.72rem;
+  font-size: 0.85rem;
   letter-spacing: 0.22em;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.78);
@@ -504,7 +484,7 @@ body {
 .tarot-hint {
   text-align: center;
   color: var(--text-muted);
-  font-size: 0.8rem;
+  font-size: 0.92rem;
   letter-spacing: 0.06em;
   margin-top: -44px;
   margin-bottom: 44px;
@@ -520,8 +500,8 @@ body {
 }
 
 .tarot-card {
-  width: 210px;
-  height: 370px;
+  width: 250px;
+  height: 440px;
   perspective: 1200px;
   cursor: pointer;
   flex-shrink: 0;
@@ -570,8 +550,9 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 18px 14px;
+  padding: 18px 16px;
   position: relative;
+  overflow: hidden;
 }
 
 .tarot-frame::before {
@@ -592,7 +573,7 @@ body {
 }
 
 .tarot-num {
-  font-size: 0.75rem;
+  font-size: 0.9rem;
   font-weight: 800;
   color: var(--accent);
   letter-spacing: 0.25em;
@@ -604,7 +585,7 @@ body {
   font-size: 5.5rem;
   font-weight: 900;
   font-style: italic;
-  flex: 1;
+  flex: 0 0 160px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -617,14 +598,14 @@ body {
 
 .tarot-line {
   color: rgba(138,21,21,0.55);
-  font-size: 0.65rem;
+  font-size: 0.8rem;
   letter-spacing: 0.08em;
   margin: 10px 0 8px;
   white-space: nowrap;
 }
 
 .tarot-name {
-  font-size: 1rem;
+  font-size: 1.15rem;
   font-weight: 700;
   text-align: center;
   line-height: 1.3;
@@ -632,7 +613,7 @@ body {
 }
 
 .tarot-type {
-  font-size: 0.68rem;
+  font-size: 0.82rem;
   color: var(--accent);
   text-transform: uppercase;
   letter-spacing: 0.14em;
@@ -646,7 +627,7 @@ body {
 }
 
 .tarot-num-back {
-  font-size: 0.7rem;
+  font-size: 0.85rem;
   color: var(--accent);
   letter-spacing: 0.22em;
   opacity: 0.5;
@@ -654,18 +635,20 @@ body {
 }
 
 .tarot-back h3 {
-  font-size: 1rem;
+  font-size: 1.05rem;
   font-weight: 700;
   text-align: center;
   line-height: 1.3;
 }
 
 .tarot-back p {
-  font-size: 0.8rem;
+  font-size: 0.92rem;
   color: var(--text-muted);
   text-align: center;
   line-height: 1.6;
   flex: 1;
+  display: flex;
+  align-items: center;
 }
 
 .pc-tags {
@@ -679,16 +662,16 @@ body {
   background: rgba(255, 255, 255, 0.04);
   border: 1px solid var(--border);
   color: var(--text-muted);
-  padding: 2px 8px;
+  padding: 3px 10px;
   border-radius: 4px;
-  font-size: 0.72rem;
+  font-size: 0.85rem;
   font-family: 'Consolas', 'Courier New', monospace;
 }
 
 .pc-link {
   color: var(--accent);
   text-decoration: none;
-  font-size: 0.82rem;
+  font-size: 0.95rem;
   font-weight: 700;
   transition: opacity 0.2s;
 }
@@ -739,8 +722,8 @@ body {
   gap: 2px;
 }
 
-.contact-card strong { font-size: 1rem; }
-.contact-card span   { font-size: 0.85rem; color: var(--text-muted); }
+.contact-card strong { font-size: 1.1rem; }
+.contact-card span   { font-size: 0.95rem; color: var(--text-muted); }
 
 /* === FOOTER === */
 footer {
@@ -748,7 +731,7 @@ footer {
   padding: 44px 24px;
   border-top: 1px solid var(--border);
   color: var(--text-muted);
-  font-size: 0.88rem;
+  font-size: 1rem;
 }
 footer a { color: var(--accent); text-decoration: none; }
 footer a:hover { text-decoration: underline; }
@@ -768,7 +751,7 @@ footer a:hover { text-decoration: underline; }
   .about-grid   { grid-template-columns: 1fr; }
 
   .tarot-grid { gap: 28px; }
-  .tarot-card  { width: 180px; height: 320px; }
+  .tarot-card  { width: 215px; height: 385px; }
 
   .arches-grid { gap: 24px; }
   .arch-card   { width: 155px; }
@@ -795,9 +778,9 @@ footer a:hover { text-decoration: underline; }
 
   .contact-card { min-width: unset; width: 100%; max-width: 320px; }
 
-  .tarot-card { width: 160px; height: 290px; }
-  .tarot-art  { font-size: 3rem; }
-  .tarot-name { font-size: 0.88rem; }
+  .tarot-card { width: 185px; height: 340px; }
+  .tarot-art  { font-size: 3.8rem; flex: 0 0 130px; }
+  .tarot-name { font-size: 1rem; }
 
   .arch-card   { width: 130px; }
   .arch-tags span { font-size: 0.62rem; }

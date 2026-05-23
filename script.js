@@ -143,17 +143,15 @@ const observer = new IntersectionObserver(entries => {
 
 document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
-// === LIENS NAV + POINTS ACTIFS AU SCROLL ===
+// === LIENS NAV ACTIFS AU SCROLL ===
 const sections   = document.querySelectorAll('section[id]');
 const navLinkEls = document.querySelectorAll('.nav-links a[href^="#"]');
-const dots       = document.querySelectorAll('.dot');
 
 const sectionObs = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
       const id = '#' + entry.target.id;
       navLinkEls.forEach(link => link.classList.toggle('active', link.getAttribute('href') === id));
-      dots.forEach(dot => dot.classList.toggle('active', dot.getAttribute('href') === id));
     }
   });
 }, { threshold: 0.45 });
