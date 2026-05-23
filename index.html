@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lune — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Pinyon+Script&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">&#x2736; Lune</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#competences">Compétences</a></li>
+        <li><a href="#projets">Projets</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="https://github.com/hoowlune" class="btn-nav" target="_blank" rel="noopener">GitHub</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section id="hero">
+
+    <div class="hero-rings" aria-hidden="true">
+      <div class="ring ring-1"></div>
+      <div class="ring ring-2"></div>
+      <div class="ring ring-3"></div>
+    </div>
+
+    <div class="hero-content">
+      <p class="hero-label">Portfolio &middot; 2026</p>
+      <h1 class="hero-name">Lune</h1>
+      <p class="hero-domains">Développement web <span class="hero-sep">&#x2736;</span> Systèmes &amp; réseaux</p>
+      <p class="hero-school">Étudiante en 1<sup>re</sup> année d'informatique à l'école Sup de Vinci</p>
+      <div class="hero-meta">
+        <div class="hero-meta-col">
+          <span class="meta-label">Spécialités</span>
+          <span class="meta-val">Web &middot; Systèmes</span>
+        </div>
+        <div class="meta-sep"></div>
+        <div class="hero-meta-col">
+          <span class="meta-label">Contact</span>
+          <span class="meta-val">marie.elipa@proton.me</span>
+        </div>
+      </div>
+      <a href="#about" class="hero-scroll">&#x2193; découvrir le parcours</a>
+    </div>
+
+    <div class="hero-visual" aria-hidden="true">
+      <div class="moon-wrap">
+        <div class="moon"></div>
+      </div>
+    </div>
+
+    <nav class="dots-nav" aria-label="Navigation sections">
+      <a href="#hero"        class="dot" title="Accueil"></a>
+      <a href="#about"       class="dot" title="À propos"></a>
+      <a href="#competences" class="dot" title="Compétences"></a>
+      <a href="#projets"     class="dot" title="Projets"></a>
+      <a href="#contact"     class="dot" title="Contact"></a>
+    </nav>
+
+  </section>
+
+  <!-- À propos -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title">À <span class="accent">propos</span></h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>Je suis <strong>Lune</strong>, étudiante en première année à <strong>Sup de Vinci</strong>, passionnée par le développement web et la création d'expériences numériques uniques.</p>
+          <br>
+          <p>J'aime construire des projets qui ont une identité forte — qu'il s'agisse d'un jeu narratif, d'une application web ou d'une interface pensée pour l'utilisateur.</p>
+          <br>
+          <p>Curieuse et motivée, je continue d'apprendre chaque jour : nouvelles technologies, nouveaux défis, nouvelles créations.</p>
+        </div>
+        <div class="about-card">
+          <div class="info-item">
+            <div>
+              <strong>Formation</strong>
+              <span>Sup de Vinci — B1</span>
+            </div>
+          </div>
+          <div class="info-item">
+            <div>
+              <strong>GitHub</strong>
+              <a href="https://github.com/hoowlune" target="_blank" rel="noopener" class="accent-link">@hoowlune</a>
+            </div>
+          </div>
+          <div class="info-item">
+            <div>
+              <strong>Statut</strong>
+              <span>Ouverte aux opportunités</span>
+            </div>
+          </div>
+          <div class="info-item">
+            <div>
+              <strong>Localisation</strong>
+              <span>France</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Compétences -->
+  <section id="competences" class="section">
+    <div class="container">
+      <h2 class="section-title">Mes <span class="accent">compétences</span></h2>
+      <div class="arches-grid">
+
+        <div class="arch-card">
+          <svg class="arch-svg" viewBox="0 0 200 500" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <radialGradient id="ga1" cx="50%" cy="68%" r="62%">
+                <stop offset="0%"   stop-color="#7a0d0d"/>
+                <stop offset="55%"  stop-color="#2e0404"/>
+                <stop offset="100%" stop-color="#0c0101"/>
+              </radialGradient>
+            </defs>
+            <path d="M 0,500 L 0,300 Q -30,150 100,0 Q 230,150 200,300 L 200,500 Z" fill="url(#ga1)"/>
+            <path d="M 0,500 L 0,300 Q -30,150 100,0 Q 230,150 200,300 L 200,500" fill="none" stroke="#8a1515" stroke-width="1.5"/>
+            <path d="M 15,500 L 15,300 Q -12,163 100,44 Q 212,163 185,300 L 185,500" fill="none" stroke="#8a1515" stroke-width="0.7" opacity="0.45"/>
+          </svg>
+          <div class="arch-content">
+            <div class="arch-tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>Python</span>
+              <span>PHP</span>
+            </div>
+            <div class="arch-dots"><span></span><span></span><span></span><span></span></div>
+            <p class="arch-title">Développement</p>
+          </div>
+        </div>
+
+        <div class="arch-card">
+          <svg class="arch-svg" viewBox="0 0 200 500" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <radialGradient id="ga2" cx="50%" cy="68%" r="62%">
+                <stop offset="0%"   stop-color="#7a0d0d"/>
+                <stop offset="55%"  stop-color="#2e0404"/>
+                <stop offset="100%" stop-color="#0c0101"/>
+              </radialGradient>
+            </defs>
+            <path d="M 0,500 L 0,300 Q -30,150 100,0 Q 230,150 200,300 L 200,500 Z" fill="url(#ga2)"/>
+            <path d="M 0,500 L 0,300 Q -30,150 100,0 Q 230,150 200,300 L 200,500" fill="none" stroke="#8a1515" stroke-width="1.5"/>
+            <path d="M 15,500 L 15,300 Q -12,163 100,44 Q 212,163 185,300 L 185,500" fill="none" stroke="#8a1515" stroke-width="0.7" opacity="0.45"/>
+          </svg>
+          <div class="arch-content">
+            <div class="arch-tags">
+              <span>Visual Studio Code</span>
+              <span>Word</span>
+              <span>Excel</span>
+              <span>PowerPoint</span>
+            </div>
+            <div class="arch-dots"><span></span><span></span><span></span><span></span></div>
+            <p class="arch-title">Outils</p>
+          </div>
+        </div>
+
+        <div class="arch-card">
+          <svg class="arch-svg" viewBox="0 0 200 500" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <radialGradient id="ga3" cx="50%" cy="68%" r="62%">
+                <stop offset="0%"   stop-color="#7a0d0d"/>
+                <stop offset="55%"  stop-color="#2e0404"/>
+                <stop offset="100%" stop-color="#0c0101"/>
+              </radialGradient>
+            </defs>
+            <path d="M 0,500 L 0,300 Q -30,150 100,0 Q 230,150 200,300 L 200,500 Z" fill="url(#ga3)"/>
+            <path d="M 0,500 L 0,300 Q -30,150 100,0 Q 230,150 200,300 L 200,500" fill="none" stroke="#8a1515" stroke-width="1.5"/>
+            <path d="M 15,500 L 15,300 Q -12,163 100,44 Q 212,163 185,300 L 185,500" fill="none" stroke="#8a1515" stroke-width="0.7" opacity="0.45"/>
+          </svg>
+          <div class="arch-content">
+            <div class="arch-tags">
+              <span>Windows</span>
+              <span>Virtualisation</span>
+              <span>Infrastructure réseau</span>
+            </div>
+            <div class="arch-dots"><span></span><span></span><span></span></div>
+            <p class="arch-title">Systèmes &amp; Réseaux</p>
+          </div>
+        </div>
+
+        <div class="arch-card">
+          <svg class="arch-svg" viewBox="0 0 200 500" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <radialGradient id="ga4" cx="50%" cy="68%" r="62%">
+                <stop offset="0%"   stop-color="#7a0d0d"/>
+                <stop offset="55%"  stop-color="#2e0404"/>
+                <stop offset="100%" stop-color="#0c0101"/>
+              </radialGradient>
+            </defs>
+            <path d="M 0,500 L 0,300 Q -30,150 100,0 Q 230,150 200,300 L 200,500 Z" fill="url(#ga4)"/>
+            <path d="M 0,500 L 0,300 Q -30,150 100,0 Q 230,150 200,300 L 200,500" fill="none" stroke="#8a1515" stroke-width="1.5"/>
+            <path d="M 15,500 L 15,300 Q -12,163 100,44 Q 212,163 185,300 L 185,500" fill="none" stroke="#8a1515" stroke-width="0.7" opacity="0.45"/>
+          </svg>
+          <div class="arch-content">
+            <div class="arch-tags">
+              <span>Anglais B2</span>
+              <span>Docs techniques</span>
+            </div>
+            <div class="arch-dots"><span></span><span></span></div>
+            <p class="arch-title">Langues &amp; Divers</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Projets -->
+  <section id="projets" class="section">
+    <div class="container">
+      <h2 class="section-title">Mes <span class="accent">projets</span></h2>
+      <p class="tarot-hint">Survolez une carte pour la retourner</p>
+      <div class="tarot-grid">
+
+        <div class="tarot-card">
+          <div class="tarot-inner">
+            <div class="tarot-front">
+              <div class="tarot-frame">
+                <span class="tarot-num">I</span>
+                <div class="tarot-art">H</div>
+                <div class="tarot-line">&#x2736; &#x2500;&#x2500;&#x2500;&#x2500;&#x2500; &#x2736;</div>
+                <h3 class="tarot-name">Hollow</h3>
+                <span class="tarot-type">Jeu narratif</span>
+              </div>
+            </div>
+            <div class="tarot-back">
+              <div class="tarot-frame">
+                <span class="tarot-num-back">I</span>
+                <h3>Hollow</h3>
+                <p>Un jeu interactif à choix multiples plongé dans un univers horrifique. Chaque décision modifie l'histoire et mène vers l'une des multiples fins possibles.</p>
+                <div class="pc-tags">
+                  <span>Python</span>
+                </div>
+                <a href="https://github.com/hoowlune" class="pc-link" target="_blank" rel="noopener">Voir sur GitHub &#x2192;</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tarot-card">
+          <div class="tarot-inner">
+            <div class="tarot-front">
+              <div class="tarot-frame">
+                <span class="tarot-num">II</span>
+                <div class="tarot-art">O</div>
+                <div class="tarot-line">&#x2736; &#x2500;&#x2500;&#x2500;&#x2500;&#x2500; &#x2736;</div>
+                <h3 class="tarot-name">Oolong</h3>
+                <span class="tarot-type">Site web</span>
+              </div>
+            </div>
+            <div class="tarot-back">
+              <div class="tarot-frame">
+                <span class="tarot-num-back">II</span>
+                <h3>Oolong</h3>
+                <p>Application de gestion de réunions avec calendrier intégré, habillée d'une identité visuelle inspirée de l'univers du thé. Planification élégante.</p>
+                <div class="pc-tags">
+                  <span>HTML</span><span>CSS</span><span>PHP</span>
+                </div>
+                <a href="https://github.com/hoowlune" class="pc-link" target="_blank" rel="noopener">Voir sur GitHub &#x2192;</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tarot-card">
+          <div class="tarot-inner">
+            <div class="tarot-front">
+              <div class="tarot-frame">
+                <span class="tarot-num">III</span>
+                <div class="tarot-art">P</div>
+                <div class="tarot-line">&#x2736; &#x2500;&#x2500;&#x2500;&#x2500;&#x2500; &#x2736;</div>
+                <h3 class="tarot-name">Péril</h3>
+                <span class="tarot-type">Jeu</span>
+              </div>
+            </div>
+            <div class="tarot-back">
+              <div class="tarot-frame">
+                <span class="tarot-num-back">III</span>
+                <h3>Péril</h3>
+                <p>Jeu de combat de monstres par vagues progressives. Données (scores, ennemis, progression) persistées via une base MongoDB.</p>
+                <div class="pc-tags">
+                  <span>Python</span><span>MongoDB</span>
+                </div>
+                <a href="https://github.com/hoowlune" class="pc-link" target="_blank" rel="noopener">Voir sur GitHub &#x2192;</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <div class="container contact-container">
+      <h2 class="section-title">Me <span class="accent">contacter</span></h2>
+      <p class="contact-intro">Une question, une opportunité ou juste envie d'échanger ? N'hésite pas !</p>
+      <div class="contact-links">
+        <a href="https://github.com/hoowlune" class="contact-card" target="_blank" rel="noopener">
+          <svg class="contact-svg" viewBox="0 0 24 24" fill="currentColor" width="28" height="28">
+            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+          </svg>
+          <div>
+            <strong>GitHub</strong>
+            <span>@hoowlune</span>
+          </div>
+        </a>
+        <a href="mailto:marie.elipa@proton.me" class="contact-card">
+          <svg class="contact-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="28" height="28">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+            <polyline points="22,6 12,13 2,6"/>
+          </svg>
+          <div>
+            <strong>Email</strong>
+            <span>marie.elipa@proton.me</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>Fait avec <span class="accent">&#x2665;</span> par <strong>Lune</strong> &mdash; <a href="https://github.com/hoowlune/Portfolio_B1" target="_blank" rel="noopener" class="accent-link">@hoowlune</a> &mdash; <span id="year"></span></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
